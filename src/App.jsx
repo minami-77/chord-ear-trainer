@@ -6,7 +6,7 @@ function App() {
   const synth = new Tone.Synth().toDestination();
   const playNote = async () => {
     await Tone.start(); // これでブラウザに「音出していいよ」って言ってる
-    console.log("audio is ready");
+    console.log("audio for note is ready");
     const now = Tone.now();
     synth.triggerAttackRelease("C4", "8n", now);
     synth.triggerAttackRelease("E4", "8n", now + 0.5);
@@ -17,15 +17,19 @@ function App() {
   const polySynth = new Tone.PolySynth().toDestination();
   const playChord = async () => {
     await Tone.start(); // これでブラウザに「音出していいよ」って言ってる
-    console.log("audio is ready");
-    polySynth.triggerAttackRelease(["C4", "E4", "G4"], "2n");
+    console.log("audio for chord is ready");
+    const cM = ["C4", "E4", "G4"];
+    const cm = ["C4", "Eb4", "G4"];
+
+
+    polySynth.triggerAttackRelease(cM, "2n");
   };
 
   return (
     <div>
-      <h1>Hello, World!</h1>
+      <h1>Hello, Music!</h1>
       <button onClick={playNote}>Click to play C E G!</button>
-      <button onClick={playChord}>Click to play C major chord!</button>
+      <button onClick={playChord}>C Major</button>
     </div>
   );
 }
