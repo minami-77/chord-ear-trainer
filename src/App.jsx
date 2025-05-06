@@ -14,15 +14,21 @@ function App() {
   }
 
     // 和音
+    const c = ["C4", "E4", "G4"];
+    const cm = ["C4", "Eb4", "G4"];
+    const caug =["C4", "E4", "G#4"];
+    const cdim =["C4", "Eb4", "Gb4"];
+    const csus4 = ["C4", "F4", "G4"];
+
+
+
+
+
   const polySynth = new Tone.PolySynth().toDestination();
   const playChord = async () => {
     await Tone.start(); // これでブラウザに「音出していいよ」って言ってる
     console.log("audio for chord is ready");
-    const cM = ["C4", "E4", "G4"];
-    const cm = ["C4", "Eb4", "G4"];
-
-
-    polySynth.triggerAttackRelease(cM, "2n");
+    polySynth.triggerAttackRelease(c, "2n");
   };
 
   return (
