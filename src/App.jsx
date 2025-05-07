@@ -20,7 +20,11 @@ function App() {
     const cdim =["C4", "Eb4", "Gb4"];
     const csus4 = ["C4", "F4", "G4"];
 
-
+    const d = ["D4", "F#4", "A4"];
+    const dm = ["C4", "Eb4", "G4"];
+    const daug =["C4", "E4", "G#4"];
+    const ddim =["C4", "Eb4", "Gb4"];
+    const dsus4 = ["C4", "F4", "G4"];
 
 
 
