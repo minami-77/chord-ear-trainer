@@ -14,25 +14,12 @@ function App() {
   }
 
     // 和音
-    const c = ["C4", "E4", "G4"];
-    const cm = ["C4", "Eb4", "G4"];
-    const caug =["C4", "E4", "G#4"];
-    const cdim =["C4", "Eb4", "Gb4"];
-    const csus4 = ["C4", "F4", "G4"];
-
-    const d = ["D4", "F#4", "A4"];
-    const dm = ["C4", "Eb4", "G4"];
-    const daug =["C4", "E4", "G#4"];
-    const ddim =["C4", "Eb4", "Gb4"];
-    const dsus4 = ["C4", "F4", "G4"];
-
-
-
+  const cM = ["C4", "E4", "G4"];
   const polySynth = new Tone.PolySynth().toDestination();
   const playChord = async () => {
     await Tone.start(); // これでブラウザに「音出していいよ」って言ってる
     console.log("audio for chord is ready");
-    polySynth.triggerAttackRelease(c, "2n");
+    polySynth.triggerAttackRelease(cM, "2n");
   };
 
   return (
