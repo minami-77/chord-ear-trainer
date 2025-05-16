@@ -13,13 +13,15 @@ function App() {
     synth.triggerAttackRelease("G4", "8n", now + 1);
   }
 
-    // 和音
+  // 和音
+  const fM = ["F4", "A4", "C5"];
   const cM = ["C4", "E4", "G4"];
+  const eM = ["E4", "G#4", "B4" ];
   const polySynth = new Tone.PolySynth().toDestination();
   const playChord = async () => {
     await Tone.start(); // これでブラウザに「音出していいよ」って言ってる
     console.log("audio for chord is ready");
-    polySynth.triggerAttackRelease(cM, "2n");
+    polySynth.triggerAttackRelease(eM, "2n");
   };
 
   return (
