@@ -25,7 +25,7 @@ const chords = () => {
   const fm = ["F4", "Ab4", "C5"];
   const faug = ["F4", "A4", "C#5"];
   const fdim = ["F4", "Ab4", "B4"];
-  const fsus4 = [];
+  const fsus4 = ["F4", "Bb4", "C5"];
 
   const gM = [];
   const gm = [];
