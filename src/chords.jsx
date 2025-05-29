@@ -27,11 +27,11 @@ const chords = () => {
   const fdim = ["F4", "Ab4", "B4"];
   const fsus4 = ["F4", "Bb4", "C5"];
 
-  const gM = [];
-  const gm = [];
-  const gaug = [];
-  const gdim = [];
-  const gsus4 = [];
+  const gM = ["G4", "B4", "D5"];
+  const gm = ["G4", "Bb4", "D5"];
+  const gaug = ["G4", "B4", "D#5"];
+  const gdim = ["G4", "Bb4", "Db5"];
+  const gsus4 = ["G4", "C4", "D5"];
 
   const aM = [];
   const am = [];
