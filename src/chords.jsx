@@ -33,11 +33,11 @@ const chords = () => {
   const gdim = ["G4", "Bb4", "Db5"];
   const gsus4 = ["G4", "C4", "D5"];
 
-  const aM = [];
-  const am = [];
-  const aaug = [];
-  const adim = [];
-  const asus4 = [];
+  const aM = ["A4", "C#5", "E5"];
+  const am = ["A4", "C5", "E5"];
+  const aaug = ["A4", "C#5", "E#5"];
+  const adim = ["A4", "C5", "Eb5"];
+  const asus4 = ["A4", "D5", "E5"];
 
   const bM = [];
   const bm = [];
