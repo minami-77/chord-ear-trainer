@@ -39,11 +39,11 @@ const chords = () => {
   const adim = ["A4", "C5", "Eb5"];
   const asus4 = ["A4", "D5", "E5"];
 
-  const bM = [];
-  const bm = [];
-  const baug = [];
-  const bdim = [];
-  const bsus4 = [];
+  const bM = ["B3", "D#4", "F#4"];
+  const bm = ["B3", "D4", "F#4"];
+  const baug = ["B3", "D#4", "G4"];
+  const bdim = ["B3", "D4", "F4"];
+  const bsus4 = ["B3", "E4", "F#4"];
 
   // Function for 和音
   const polySynth = new Tone.PolySynth().toDestination();
