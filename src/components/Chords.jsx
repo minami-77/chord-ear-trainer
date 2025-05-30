@@ -16,7 +16,7 @@ const Chords = (chord) => {
 
   return (
     <div>
-      <button onClick={playChord}>chord</button>
+      <button onClick={playChord}>{chord["chord"]}</button>
     </div>
   )
 }

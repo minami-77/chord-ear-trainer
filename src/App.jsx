@@ -61,8 +61,14 @@ function App() {
     <div>
       <h1>Hello, Music!</h1>
       <button onClick={playNote}>Click to play C E G!</button>
+      <h3>C ダイアトニック</h3>
       <Chords chord={cM}/>
-      <Chords chord={dM}/>
+      <Chords chord={dm}/>
+      <Chords chord={em}/>
+      <Chords chord={fM}/>
+      <Chords chord={gM}/>
+      <Chords chord={am}/>
+      <Chords chord={bdim}/>
     </div>
   );
 }
